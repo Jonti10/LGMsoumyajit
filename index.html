@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JerseyFORyou</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #02000c;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+
+        .item span {
+            font-style: normal;
+        }
+
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius: 0 !important;
+            transition: box-shadow 0.5s;
+        }
+
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">jFy</a>
+            </div>
+            <nav id="navbar">
+                <div id="logo">
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">COMMUNITY</a></li>
+                    <li><a href="#portfolio">WE ARE</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">LOCATION</a></li>
+                    <li><a href="#social">SOCIAL MEDIA</a></li>
+                </ul>
+            </nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            </div>
+    </nav>
+
+    <div class="j text-center">
+        <h1 class="logo-text"><span>jersey</span>FOR<span>you</span></h1>
+        <p>Jersey macker</p>
+        <form>
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="about.jpg" .jpg height="440" width="385">
+            </div>
+            <div class="col-sm-8">
+                <h2>About</h2><br>
+                <h4>our sports jersey ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollanim id est laborum consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br><button class="btn btn-default btn-lg">Get in Touch</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center">
+        <h2>SERVICES</h2>
+        <h4>What we offer</h4>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="1.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="4.jpg" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+        <!-- Container (Portfolio Section) -->
+        <div id="portfolio" class="container3">
+            <h2>WE ARE</h2><br>
+            <div class="container3">
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="creat1.jpeg">
+                    </div>
+                    <div class="content2">
+                        <h4>We donate lots of cloths</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque veritatis
+                            dolorum tempore rerum quibusdam praesentium at dolorem, ipsam odio eveniet temporibus
+                            accusamus. Exercitationem, veritatis modi? Repellendus odio a vitae.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="creat2.jpeg">
+                    </div>
+                    <div class="content2">
+                        <h4>We set up free health camp for needed people</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur aditatis modi? Repellendus odio a vitae.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="creat4.jpeg">
+                    </div>
+                    <div class="content2">
+                        <h4>We provide study material among poor students</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque veritatis
+                            dolorum tempore rerum quibusdam us odio a vitae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Container (Pricing Section) -->
+        <div id="pricing" class="container-fluid"></div>
+        <div class="text-center">
+            <h2>Pricing</h2>
+            <h4>Choose a payment plan that works for you</h4>
+            <div class="wrapper-price">
+                <div class="single-price">
+                    <h1>Basic</h1>
+                    <div class="price">
+                        <h2>199/-</h2>
+                    </div>
+                    <div class="deals">
+                        <p><strong>20</strong> LoGEWem</p>
+                        <p><strong>15</strong> IpRum</p>
+                        <p><strong>5</strong> DoFWr</p>
+                        <p><strong>2</strong> SRFEt</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+                <div class="single-price">
+                    <h1>standard</h1>
+                    <div class="price">
+                        <h2>399/-</h2>
+                    </div>
+                    <div class="deals">
+                        <p><strong>40</strong> Rrem</p>
+                        <p><strong>25</strong> Ipm</p>
+                        <p><strong>10</strong> DoQ3lor</p>
+                        <p><strong>5</strong> SQWt</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+
+                        <h4>4 month</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+                <div class="single-price">
+                    <h1>premium</h1>
+                    <div class="price">
+                        <h2>799/-</h2>
+                    </div>
+                    <div class="deals">
+                        <p><strong>100</strong> Lorgm</p>
+                        <p><strong>50</strong> IpsGEWm</p>
+                        <p><strong>25</strong> DoGWEr</p>
+                        <p><strong>10</strong> SiEWGt</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+
+                        <h4>1 year</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1> </h1>
+            </div>
+            <!-- Container (Contact Section) -->
+            <section class="content">
+                <div id="contact" class="contact" class="container">
+                    <h2 class="text-center">CONTACT</h2>
+                    <h1>
+                        HALLO!! Here you can get any kind of sports JERSEY.
+                        <h2>
+                            By the reckoning there is more than 8000 sports in the world!
+                        </h2>
+                    </h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117545.80656590784!2d88.37072765088261!3d22.97575574529446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f895ab5a7572a9%3A0xc7041e2888b4adfa!2sKanchrapara%20Railway%20Station!5e0!3m2!1sen!2sin!4v1633524698153!5m2!1sen!2sin"
+                        width="870" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="col-sm-7 slideanim">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                    required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                            rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!--social media-->
+
+        <div id="social" class="text-center"></div>
+        <div class="footer">
+            <div class="footer-content">
+
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>jersey</span>FOR<span>you</span></h1>
+
+                    <div class="col-sm-13">
+
+                        <h2>Contact us and we'll there for you 24X7.</h2>
+
+                        <p><span class="glyphicon glyphicon-map-marker"></span> 46/1 Kalyani ,WB, IND</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +91 9330483567</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> jerseyforyou@gmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+                <p>Created by Soumyajit Bhattacharjee</p>
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
+
+</body>
+
+</html>
